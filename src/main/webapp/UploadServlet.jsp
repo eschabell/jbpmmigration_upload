@@ -5,6 +5,7 @@
 <%@ page import="org.apache.commons.fileupload.servlet.*"%>
 <%@ page import="org.apache.commons.io.output.*"%>
 <%@ page import="org.apache.commons.lang.*"%>
+<%@ page import="org.jbpm.migration.xsl.JbpmMigration"%>
 
 <%
     File file;
@@ -43,8 +44,10 @@
                     String fileName = fi.getName();
                     boolean isInMemory = fi.isInMemory();
                     long sizeInBytes = fi.getSize();
-                    out.println(fileName + " == " + sizeInBytes + " bytes, and it's "+ (isInMemory ? "" : "NOT ") + "in memory.");
+                    out.println("<p>Input file jBPM jPDL: </p>");
                     out.println("<pre>" + StringEscapeUtils.escapeHtml(fi.getString()) + "</pre>");
+                    out.println("Output file BPMN2:");
+                    out.println("<pre>" + StringEscapeUtils.escapeHtml(JbpmMigration.transform(fi.getString())) + "</pre>");
                 }
             }
             out.println("</body>");
