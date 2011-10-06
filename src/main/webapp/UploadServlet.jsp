@@ -44,8 +44,14 @@
                     String fileName = fi.getName();
                     boolean isInMemory = fi.isInMemory();
                     long sizeInBytes = fi.getSize();
+                    
+                    // format an introduction.
+                    
+                    // now show the input jPDL.
                     out.println("<p><h2>Input file jBPM jPDL:</h2> </p>");
                     out.println("<pre>" + StringEscapeUtils.escapeHtml(fi.getString()) + "</pre>");
+                    
+                    // now the final output BPMN2.
                     out.println("<p><h2>Output file BPMN2:</h2> </p>");
                     out.println("<pre>" + StringEscapeUtils.escapeHtml(JbpmMigration.transform(fi.getString())) + "</pre>");
                 }
