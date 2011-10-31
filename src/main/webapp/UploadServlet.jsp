@@ -5,7 +5,7 @@
 <%@ page import="org.apache.commons.fileupload.servlet.*"%>
 <%@ page import="org.apache.commons.io.output.*"%>
 <%@ page import="org.apache.commons.lang.*"%>
-<%@ page import="org.jbpm.migration.xsl.JbpmMigration"%>
+<%@ page import="org.jbpm.migration.JbpmMigration"%>
 
 <%
     File file;
