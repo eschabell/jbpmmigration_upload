@@ -6,7 +6,7 @@
 	<groupId>org.jbpm.jbpm5</groupId>
 	<artifactId>jbpmmigration_upload</artifactId>
 	<name>jBPM Migration Upload</name>
-	<version>0.3-SNAPSHOT</version>
+	<version>0.3</version>
 	<packaging>war</packaging>
 
 	<dependencies>
@@ -34,7 +34,7 @@
 		<dependency>
 			<groupId>org.jbpm.jbpm5</groupId>
 			<artifactId>jbpmmigration</artifactId>
-			<version>0.10-SNAPSHOT</version>
+			<version>0.10</version>
 		</dependency>
 	</dependencies>
 
