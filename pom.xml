@@ -6,7 +6,7 @@
 	<groupId>org.jbpm.jbpm5</groupId>
 	<artifactId>jbpmmigration_upload</artifactId>
 	<name>jBPM Migration Upload</name>
-	<version>0.6</version>
+	<version>0.7</version>
 	<packaging>war</packaging>
 
     <dependencyManagement>
@@ -41,7 +41,7 @@
 		<dependency>
 			<groupId>org.jbpm.jbpm5</groupId>
 			<artifactId>jbpmmigration</artifactId>
-			<version>0.13</version>
+			<version>0.14</version>
 		</dependency>
 
         <!-- Using provided scope as APIs are included in JBoss AS 7. -->
